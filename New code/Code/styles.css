@@ -1,0 +1,14 @@
+h1{
+    border-style: dashed;
+    color:blue;
+    background-color: red;
+}
+.heading{
+
+}
+ul li p{
+    color:red;
+}
+h2~li{
+    color:blue;
+}
