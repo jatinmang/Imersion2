@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Search - Amazon Style</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Search for Products</h2>
+
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search products...">
+    <button onclick="searchProduct()">Search</button>
+  </div>
+
+  <div class="sort-box">
+    <label for="sortSelect">Sort by Price:</label>
+    <select id="sortSelect" onchange="sortProducts()">
+      <option value="default">-- Select --</option>
+      <option value="low-to-high">Low to High</option>
+      <option value="high-to-low">High to Low</option>
+    </select>
+  </div>
+  <p class="error" id="errorMsg"></p>
+
+  <div class="product-container" id="productResults"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
